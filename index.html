@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <meta charset="UTF-8" />
@@ -10,9 +11,11 @@
   </head>
   <body>
     <header class="header">
-      <div class="list menu">
-        <div><a class="list-0" href="#">главная</a></div>
-        <ul class="list">
+      <div>
+        <ul class="menu">
+          <li class="list-no-point">
+            <a class="list-no-point" href="#">главная</a>
+          </li>
           <li><a href="#lots">посмотреть лоты</a></li>
           <li><a href="#about">об аукционе</a></li>
         </ul>
@@ -20,120 +23,115 @@
       <img
         class="logo-black"
         src="./images/logo-black.svg"
-        alt="логотив сайта"
-        width="148"
-        height="105"
+        alt="логотип сайта"
       />
-      <div class="adress header-adress">
+      <address class="address header-address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>
           наб. Принсенграхт 263-<br />
           265, Амстердам
         </p>
-      </div>
+      </address>
     </header>
     <main>
       <section class="jambotron">
-        <div class="jambotron-blackground"></div>
-        <div class="jambotron_title">
-          <div class="jambotron-title">
-            <div class="jambotron-row jambotron-row_1">
-              <p>о<span class="jambotron-row_space">но</span></p>
-            </div>
-            <div class="jambotron-row jambotron-row_2">
-              <p>те<span class="jambotron-row_space">бе</span></p>
-            </div>
-            <div class="jambotron-row jambotron-row_3">
-              <p>
-                <span class="jambotron-row_space">н</span>ад<span
-                  class="row-3-no_span"
-                  >о</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
+        <div class="overlay"></div>
+        <h1 class="jambotron-title">
+          <span class="aligned-text"
+            >о<span class="jambotron-row_space">но</span></span
+          >
+          <span class="aligned-text_center"
+            >те<span class="jambotron-row_space">бе</span></span
+          >
+          <span class="aligned-text_right"
+            ><span class="jambotron-row_space">н</span>ад<span
+              class="aligned-text_right-no-space"
+              >о</span
+            ></span
+          >
+        </h1>
         <div class="jambotron_footer">
-          <div class="subtitle">
-            <span class="subtitle-span-1">Аукцион вещей</span
-            ><span class="subtitle-span-2">,</span
-            ><span class="subtitle-span-3">в</span
-            ><span class="subtitle-span-4">которые никт</span
-            ><span class="subtitle-span-5">о</span
-            ><span class="subtitle-span-6">не верил</span>
-          </div>
-          <button class="button" type="button" onclick="location.href='##'">
-            Сделать ставку
-          </button>
+          <p class="subtitle">
+            <span class="subtitle-span-one">Аукцион вещей</span
+            ><span class="subtitle-span-two">,</span
+            ><span class="subtitle-span-three">в</span
+            ><span class="subtitle-span-four">которые никт</span
+            ><span class="subtitle-span-five">о</span
+            ><span class="subtitle-span-six">не верил</span>
+          </p>
+
+          <a class="button type-button" href="#">Сделать ставку</a>
         </div>
       </section>
       <section class="lots" id="lots">
-        <h3 class="title-of-lots">лоты</h3>
-        <div class="cards">
-          <div
-            class="lots-space lot_1 type-button"
-            onclick="location.href='##'"
+        <h2 class="title-of-lots">лоты</h2>
+        <div class="card-list">
+          <a class="card-link" href="#"
+            ><article>
+              <div class="card left-card">
+                <div class="card-overlay"></div>
+                <span class="card-title">
+                  Фильм режиссёра, который бросил киношколу</span
+                ><span class="card-text"
+                  >Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?</span
+                >
+              </div>
+            </article></a
           >
-            <div class="lots-blackground"></div>
-            <p class="lots-titles lot_1-title">
-              Фильм режиссёра, который бросил киношколу
-            </p>
-            <p class="lots-texts lot_1-text">
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-            </p>
-          </div>
-          <div
-            class="lots-space lot_2 type-button"
-            onclick="location.href='##'"
+
+          <a class="card-link" href="#"
+            ><article>
+              <div class="card center-card">
+                <div class="card-overlay"></div>
+                <span class="card-title"
+                  >Книга, где описан один скучный день из жизни рекламного
+                  агента</span
+                ><span class="card-text"
+                  >Объёмом почти в тысячу страниц. Иногда без знаков препинания
+                  и с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?</span
+                >
+              </div>
+            </article></a
           >
-            <div class="lots-blackground"></div>
-            <p class="lots-titles lot_2-title">
-              Книга, где описан один скучный день из жизни рекламного агента
-            </p>
-            <p class="lots-texts lot_2-text">
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-              переходами на древнеанглийский. В ней одновременно рассказывается
-              о 16 июня 1904 года и об истории литературы, начиная с античных
-              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-              бы вы поставили на «Улисса» Джеймса Джойса?
-            </p>
-          </div>
-          <div
-            class="lots-space lot_3 type-button"
-            onclick="location.href='##'"
+
+          <a class="card-link" href="#"
+            ><article>
+              <div class="card right-card">
+                <div class="card-overlay"></div>
+                <span class="card-title">
+                  Картина, которую повторит даже 5-летний сын маминой
+                  подруги</span
+                ><span class="card-text"
+                  >Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?</span
+                >
+              </div>
+            </article></a
           >
-            <div class="lots-blackground"></div>
-            <p class="lots-titles lot_3-title">
-              Картина, которую повторит даже 5-летний сын маминой подруги
-            </p>
-            <p class="lots-texts lot_3-text">
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков<span
-                class="lot-3-span"
-                >...</span
-              >
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна
-              из революционных работ Кандинского?
-            </p>
-          </div>
         </div>
-        <div class="lots-more"><a href="#">посмотреть больше</a></div>
+        <a class="lots-more" href="#">посмотреть больше</a>
       </section>
       <section class="about" id="about">
-        <div class="about_logo">
+        <div class="about_logo logo-white_back">
           <img
             class="logo-white"
             src="./images/logo-white.svg"
             alt="логотив сайта"
           />
-          <div class="logo-white_back"></div>
         </div>
         <div class="about-column">
           <div>
             <h3 class="about-column-title">об аукционе</h3>
-            <p class="about-info-text about-info-text-1">
+            <p class="about-info-text about-info-text-top">
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
@@ -159,18 +157,16 @@
         <a class="link-to-contact" href="mailto:info@sobaka.ge"
           >info@sobaka.ge</a
         >
-        <p class="adress">
+        <address class="address">
           наб. Принсенграхт 263-<br />
           265, Амстердам
-        </p>
+        </address>
       </div>
-      <div class="footer-menu">
-        <div><a class="list-0" href="#">главная</a></div>
-        <ul class="menu-list">
-          <li><a href="#lots">посмотреть лоты</a></li>
-          <li><a href="#about">об аукционе</a></li>
-        </ul>
-      </div>
+      <ul class="footer-menu">
+        <li><a href="#">главная</a></li>
+        <li><a href="#lots">посмотреть лоты</a></li>
+        <li><a href="#about">об аукционе</a></li>
+      </ul>
       <div class="socials">
         <img
           onclick="location.href='##'"
